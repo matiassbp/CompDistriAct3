@@ -10,6 +10,7 @@ public class Servidor {
         ServerSocket serverSocket = null;
         Socket socket = null;
         String peticion = null;
+<<<<<<< HEAD
         String id = "6";
         String[] ips = {"26.187.118.118", "26.157.199.222", "26.25.191.84", "26.157.200.26"};
         String[] ipMayor = {"26.187.118.118"};
@@ -17,6 +18,15 @@ public class Servidor {
         int numeroAzar = (int) (Math.random() * 100 + 1);
         int numeroAzar2 = (int) (Math.random() * 100 + 1);
         Hilo Hilo = new Hilo("Algo", ips);
+=======
+        String id = "4";
+        String[] ips = {"26.157.199.222","26.25.191.84","26.157.200.26","26.187.118.118"};
+        String[] ipMayor = {"26.187.118.118","26.157.200.26","26.25.191.84","26.157.199.222"};
+        String ip = "";
+        int numeroAzar = (int)(Math.random()*100 + 1);
+        int numeroAzar2 = (int)(Math.random()*100 + 1);
+        Hilo Hilo = new Hilo("Algo",ips);  
+>>>>>>> 3e87b52d37cd3f80dc6d3166704c0b945e068de1
         Hilo.start();
 
         try {
