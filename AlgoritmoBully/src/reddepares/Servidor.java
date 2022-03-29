@@ -10,13 +10,13 @@ public class Servidor {
         ServerSocket serverSocket = null;
         Socket socket = null;
         String peticion = null;
-        String id = "1";
-        String[] ips = {"26.157.199.222","26.187.118.118","26.157.200.26","26.25.191.84"};
-        String[] ipMayor = {"26.25.191.84","26.157.200.26","26.187.118.118","26.157.199.222"};
+        String id = "4";
+        String[] ips = {"26.157.199.222","26.25.191.84","26.157.200.26","26.187.118.118"};
+        String[] ipMayor = {"26.187.118.118","26.157.200.26","26.25.191.84","26.157.199.222"};
         String ip = "";
         int numeroAzar = (int)(Math.random()*100 + 1);
         int numeroAzar2 = (int)(Math.random()*100 + 1);
-        Hilo Hilo = new Hilo(" " + numeroAzar ,ips);  
+        Hilo Hilo = new Hilo("Algo",ips);  
         Hilo.start();
 
         try {
