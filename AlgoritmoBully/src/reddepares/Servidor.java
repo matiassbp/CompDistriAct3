@@ -14,7 +14,9 @@ public class Servidor {
         String[] ips = {"26.157.199.222","26.187.118.118","26.157.200.26","26.25.191.84"};
         String[] ipMayor = {"26.25.191.84","26.157.200.26","26.187.118.118","26.157.199.222"};
         String ip = "";
-        Hilo Hilo = new Hilo("Algo",ips);  
+        int numeroAzar = (int)(Math.random()*100 + 1);
+        int numeroAzar2 = (int)(Math.random()*100 + 1);
+        Hilo Hilo = new Hilo(" " + numeroAzar ,ips);  
         Hilo.start();
 
         try {
