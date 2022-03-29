@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Nico
+ * @author mati
  */
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException, InterruptedException {
